@@ -6,6 +6,7 @@ poetry.lock
 # testing
 .coverage
 junit-pytest.xml
+.mypy_cache/
 
 # caches
 *.pytest_cache

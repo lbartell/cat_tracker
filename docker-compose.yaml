@@ -14,6 +14,6 @@ services:
     <<: *tests
     container_name: cat_tracker_unit_tests
     entrypoint: >
-      python3 -m pytest -c pytest.ini
+      python3 -m pytest -c testing_framework/pytest.ini
 
 
