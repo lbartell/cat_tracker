@@ -1,6 +1,14 @@
+
+# environment management
 poetry.lock
 .python-version
+
+# testing
 .coverage
+junit-pytest.xml
+.mypy_cache/
+
+# caches
 *.pytest_cache
 *.egg-info
 *.idea

@@ -15,7 +15,7 @@ This project runs within a python 3.7 container using Docker and Docker-compose
 # How-to
 
 ## Run tests
-`docker-compoese run unit-tests`
+`docker-compose run unit-tests`
 
 ## Modify python package dependencies
 1. Update dependencies in `pyproject.toml`
