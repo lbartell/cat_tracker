@@ -1,0 +1,7 @@
+poetry.lock
+.python-version
+.coverage
+*.pytest_cache
+*.egg-info
+*.idea
+__pycache__

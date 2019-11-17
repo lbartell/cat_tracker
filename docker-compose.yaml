@@ -1,0 +1,21 @@
+version: "3.4"
+
+x-tests: &tests
+  build:
+    context: .
+    dockerfile: Dockerfile
+  image: cat_tracker:test-venv
+  working_dir: /home
+  volumes:
+    - .:/home/
+
+services:
+  unit-tests:
+    <<: *tests
+    container_name: cat_tracker_unit_tests
+    entrypoint: >
+      python3 -m pytest
+        cat_tracker
+        -vv
+        --cov=cat_tracker
+
